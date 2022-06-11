@@ -1,0 +1,49 @@
+.button {
+  background-color: #1a1a1a;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 9px;
+}
+
+.button {
+  border-radius: 20px;
+}
+
+body {
+  background-color: #c39bd3;
+  background-repeat: repeat;
+}
+
+.copyright {
+  color: white;
+  display: inline-block;
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.copyright a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.copyright a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}

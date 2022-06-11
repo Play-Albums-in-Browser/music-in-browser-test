@@ -1,19 +1,42 @@
-<script>
-  Arr = ["song1.mp3", "song2.mp3", "song3.mp3"];
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Music in Browser</title>
+  </head>
+  <body>
+    <div style="width: 500px; margin: auto; position: relative">
+      <audio controls style="width: 100%" controls id="musicPlayer" autoplay>
+        <source src="" type="audio/mp3" />
+        <!--Make sure not to put anything in the src-->
+      </audio>
 
-  function func(x) {
-    document.getElementById("musicPlayer").setAttribute("src", Arr[x]);
-  }
-</script>
+      <!-- Create a few buttons -->
+      <div style="text-align: center">
+        <button class="button button" onclick="func(0)">
+          Isn't She Lovely - Stevie Wonder
+        </button>
+      </div>
+      <div style="text-align: center">
+        <button class="button button" onclick="func(1)">I Can Do It</button>
+      </div>
+    </div>
+    <section>
+      <center>
+        <h1 class="copyright">
+          &#169; 2022 ,
+  
+          <a href="https://github.com/Play-Albums-in-Browser"
+            target="_blank">Play-Albums-In-Browser</a
+          >, <a href="https://github.com/amiralidevv" target="_blank">amiralidevv</a>... All
+          rights reserved.
+        </h1>
+      </section>
+      </center>
 
-<!-- In Your Html Code -->
-<!-- Create a music element -->
-<audio controls id="musicPlayer" autoplay>
-  <source src="" type="audio/mp3" />
-  <!--Make sure not to put anything in the src-->
-</audio>
-
-<!-- Create a few buttons -->
-<button onclick="func(0)">Song 1</button>
-<button onclick="func(1)">Song 2</button>
-<button onclick="func(2)">Song 3</button>
+  </body>
+  <script src="index.js"></script>
+</html>
